@@ -1,0 +1,9 @@
+lp 5449
+name and lastname: Anna Mikina
+salary: 10000
+lp 8678
+name and lastname: Anna Mikina
+salary: 10000
+lp 3601
+name and lastname: Mad Max
+salary: 5678
