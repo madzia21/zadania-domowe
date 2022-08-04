@@ -7,10 +7,7 @@ Employee::Employee()
 	_name = "bd";
 	_lastname = "bd";
 	_salary = 0;
-	std::random_device randomDevice;
-	std::default_random_engine defaultRandomEngine(randomDevice());
-	std::uniform_int_distribution<int> distribution(1, 10000);
-	_lp = distribution(defaultRandomEngine);
+	_lp = randomNumbersGenerator();
 }
 Employee::Employee(std::string name, std::string lastname, double salary, int lp) : 
 	Employee()
@@ -21,6 +18,29 @@ Employee::Employee(std::string name, std::string lastname, double salary, int lp
 }
 Employee::~Employee()
 {
+}
+int Employee::randomNumbersGenerator(int range)
+{
+	std::random_device randomDevice;
+	std::default_random_engine defaultRandomEngine(randomDevice());
+	std::uniform_int_distribution<int> distribution(1, range);
+	return distribution(defaultRandomEngine);
+}
+int Employee::getLP() const
+{
+	return _lp;
+}
+double Employee::getSalary() const
+{
+	return _salary;
+}
+std::string Employee::getLastname() const
+{
+	return _lastname;
+}
+std::string Employee::getName() const
+{
+	return _name;
 }
 void Employee::writeToFile(std::string fileName)
 {

@@ -4,3 +4,6 @@ salary: 10000
 lp 8242
 name and lastname: Miki Mouse
 salary: 5677
+lp 290
+name and lastname: Anna Mikina
+salary: 10000

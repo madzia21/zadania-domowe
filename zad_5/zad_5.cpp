@@ -12,6 +12,6 @@ int main()
 {
     std::string word = "Madagaskar";
     char l = 'a';
-    int counter = countGivenLetter(word, 'z');
+    int counter = countGivenLetter(word, 'M');
     std::cout << counter;
 }

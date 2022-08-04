@@ -12,5 +12,5 @@ int main()
     std::cout << employee2;
     employee1.writeToFile();
    // employee2.writeToFile();
-    File<Employee> file("plik3.txt", employee2);
+   // File<Employee> file("plik3.txt", employee2);
 }
